@@ -1,0 +1,2 @@
+# SparkSynapseIndex
+MicrosoftTraining
