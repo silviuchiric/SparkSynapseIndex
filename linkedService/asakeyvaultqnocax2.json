@@ -1,0 +1,11 @@
+{
+	"name": "asakeyvaultqnocax2",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://asakeyvaultqnocax2.vault.azure.net/"
+		}
+	}
+}
