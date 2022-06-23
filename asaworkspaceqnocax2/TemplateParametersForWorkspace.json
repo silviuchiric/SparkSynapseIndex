@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "asaworkspaceqnocax2"
+		},
+		"asadatalakeqnocax2_accountKey": {
+			"value": ""
+		},
+		"asastoreqnocax2_connectionString": {
+			"value": ""
+		},
+		"asaworkspaceqnocax2-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_import01_connectionString": {
+			"value": ""
+		},
+		"asadatalakeqnocax2_properties_typeProperties_url": {
+			"value": "https://asadatalakeqnocax2.dfs.core.windows.net"
+		},
+		"asakeyvaultqnocax2_properties_typeProperties_baseUrl": {
+			"value": "https://asakeyvaultqnocax2.vault.azure.net/"
+		},
+		"asaworkspaceqnocax2-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://asadatalakeqnocax2.dfs.core.windows.net"
+		}
+	}
+}
