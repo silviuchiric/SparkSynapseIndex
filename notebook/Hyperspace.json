@@ -18,14 +18,11 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "aaf618b7-6087-47dd-9263-2b02ed80299f"
+				"spark.autotune.trackingId": "0cc1b32e-7ab6-4313-8f3b-7b8c409ff25e"
 			}
 		},
 		"metadata": {
 			"saveOutput": true,
-			"synapse_widget": {
-				"version": "0.1"
-			},
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
@@ -47,7 +44,7 @@
 				"nodeCount": 3,
 				"cores": 4,
 				"memory": 28,
-				"extraHeader": null
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -85,8 +82,7 @@
 					"# Create an instance of Hyperspace\r\n",
 					"hyperspace = Hyperspace(spark)"
 				],
-				"attachments": null,
-				"execution_count": 14
+				"execution_count": 1
 			},
 			{
 				"cell_type": "code",
@@ -110,8 +106,7 @@
 					"hyperspace.createIndex(dfCustomers, indexConfigCustomers)    # only create index once\r\n",
 					"hyperspace.indexes().show()"
 				],
-				"attachments": null,
-				"execution_count": 7
+				"execution_count": 2
 			},
 			{
 				"cell_type": "code",
@@ -131,8 +126,7 @@
 					"df1.show()\r\n",
 					"df1.explain(True)"
 				],
-				"attachments": null,
-				"execution_count": 8
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -154,8 +148,7 @@
 					"df1.show()\r\n",
 					"df1.explain(True)"
 				],
-				"attachments": null,
-				"execution_count": 9
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -176,8 +169,7 @@
 					"spark.conf.set(\"spark.hyperspace.explain.displayMode\", \"html\")\r\n",
 					"hyperspace.explain(df1, True, displayHTML)"
 				],
-				"attachments": null,
-				"execution_count": 10
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -197,8 +189,7 @@
 					"\r\n",
 					"hyperspace.explain(eqJoin, True, displayHTML)"
 				],
-				"attachments": null,
-				"execution_count": 11
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -218,8 +209,7 @@
 					"df1.show()\r\n",
 					"df1.explain(True)"
 				],
-				"attachments": null,
-				"execution_count": 15
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -241,8 +231,7 @@
 					"df1.show()\r\n",
 					"df1.explain(True)"
 				],
-				"attachments": null,
-				"execution_count": 16
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -286,8 +275,7 @@
 					"for file in files:\r\n",
 					"    print(file.name, file.isDir, file.isFile, file.path, file.size)"
 				],
-				"attachments": null,
-				"execution_count": 18
+				"execution_count": null
 			}
 		]
 	}
